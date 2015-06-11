@@ -3,7 +3,7 @@
 
 
 article#statContent{
-	width:800px; 
+	width:900px; 
 	margin:0 auto; 
 	overflow:visible;
 	padding:0;
@@ -16,10 +16,33 @@ aside#leftSnb{
 	display:inline-block;
 	width:25%;
 	min-height:600px;
-	padding:20px 5px 0 10px;
+	padding:100px 5px 0 10px;
 	vertical-align:top;
 	text-align:left;
+	background-color:#D8D8D8;
 }
+
+aside#leftSnb li{
+	border-bottom-left-radius:25%;
+	border-bottom-right-radius:25%;
+	border-top-left-radius:25%;
+	border-top-right-radius:25%;
+	background-color:#fff;
+	margin-bottom:30px;
+	text-align:center;
+}
+
+aside#leftSnb li a{
+	font-size:16pt;
+	font-weight:bold;
+	font-family:"dotum";
+}
+
+aside#leftSnb li a:hover{
+	font-size:20pt;
+	text-decoration:none;
+}
+
 
 article#rightContent{
 	display:inline-block;
@@ -58,6 +81,11 @@ div.statRule{
 	background-color:#D8D8D8;
 	border:1px solid black;
 	padding:10px;
+}
+
+div.statRule ul li{
+	list-style-type:square;
+	list-style-position: inside;
 }
 
 div.rankTable{

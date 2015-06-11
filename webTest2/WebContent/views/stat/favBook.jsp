@@ -15,11 +15,15 @@
 		@IMPORT url("<%=request.getContextPath()%>/css/stat/favBook.css");
 	</style>
 	
+	<!-- HighCharts -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="http://code.highcharts.com/highcharts.js"></script>
 	
+	<!-- JQuery UI -->
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
+	<script src="<%=request.getContextPath()%>/js/stat/stat-common.js"></script>
 	
 </head>
 <body>
@@ -29,10 +33,7 @@
 	<jsp:include page="/views/stat/parts/leftSnb.jsp" />
 	
 	<article id="rightContent">
-		<div id="timeControlPanel">
-			<span>시작날짜 <input type="text" name="startDate" id="datepicker" /> ~ 끝 날짜 <input type="text" name="endDate" id="datepicker2" /></span>
-			<button>검색</button>
-		</div>
+		<jsp:include page="/views/stat/parts/dateControl.jsp" />
 		
 		<div class="chartBox">
 			<div id="highChartContainer"></div>
@@ -127,16 +128,10 @@ $(function(){
 	
 	$(document).ready(function(){
 		drawChart();
-		drawCalendar();
 	}());
 	
 }());
-
-function drawCalendar(){
-	$( "#datepicker" ).datepicker();
-	$( "#datepicker2" ).datepicker();
-}
-		
+	
 function drawChart(){
 	
 	  $('#highChartContainer').highcharts({
