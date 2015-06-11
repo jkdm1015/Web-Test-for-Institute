@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+@IMPORT url("reset.css");
+
+
+article#statContent{
+	width:800px; 
+	margin:0 auto; 
+	overflow:visible;
+	padding:0;
+	text-align:center;
+	height:100%;
+	
+}
+
+aside#leftSnb{
+	display:inline-block;
+	width:25%;
+	min-height:600px;
+	padding:20px 5px 0 10px;
+	vertical-align:top;
+	text-align:left;
+}
+
+article#rightContent{
+	display:inline-block;
+	width:65%;
+	vertical-align:top;
+	padding:30px 10px;
+}
+
+div#timeControlPanel{
+	margin-bottom:60px;
+	background-color:#D8D8D8;
+}
+
+div.chartBox{
+	border:2px solid gray;
+	margin:0 auto;
+	display:inline-block;
+	width:99%;
+	min-height:200px;
+}
+
+div.rankBox{
+	margin:10px auto;
+	display:inline-block;
+	width:99%;
+	min-height:70px;
+}
+
+div.statRule{
+	margin-top:30px;
+	clear:both;
+	float:right;
+	width:350px;
+	min-height:100px;
+	text-align:left;
+	background-color:#D8D8D8;
+	border:1px solid black;
+	padding:10px;
+}
+
+div.rankTable{
+	margin:0 auto;
+	width:98%;
+	min-height:150px;
+	padding:1px;
+}
+
+div.rankTable th{
+	border:1px solid gray;
+	border-collapse:collapse;
+	
+}
+
+div.rankTable tr.odd{
+	background-color:#D8D8D8;
+}
+
+div.rankTable tr.even{
+	background-color:#C6C6C6;
+}
+

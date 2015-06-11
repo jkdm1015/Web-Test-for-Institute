@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+@IMPORT url("stat-common.css");
+
+article, aside, div{
+	/* border:1px solid orange; */
+}
