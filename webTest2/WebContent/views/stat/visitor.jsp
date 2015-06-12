@@ -30,6 +30,7 @@
 	
 	<article id="rightContent">
 		<jsp:include page="/views/stat/parts/dateControl.jsp" />
+		
 	</article>
 </article>
 	
