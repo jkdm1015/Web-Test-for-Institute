@@ -32,7 +32,7 @@ function drawPie(containerSelector, chartTitle, chartData){
 	        },
 	        series: [{
 	            type: 'pie',
-	            name: 'Browser share',
+	            name: '책 대여 비율',
 	            data: chartData
 	        }]
 	    });

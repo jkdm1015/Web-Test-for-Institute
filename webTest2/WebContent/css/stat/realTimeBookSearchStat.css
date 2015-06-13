@@ -2,11 +2,13 @@
 @IMPORT url("stat-common.css");
 
 section, article, aside, div{
-	border:1px solid orange;
+	//border:1px solid orange;
 }
 
 section.tabPanel{
 	text-align:left;
+	margin-bottom:30px;
+	border:1px solid #EAEAEA;
 }
 
 section.tabPanel ul{
@@ -40,6 +42,7 @@ section.tabPanel ul li:not(.selected):hover{
 section.rankBox table.rankTable{
 	text-align:left;
 	width:100%;
+	border:1px solid gray;
 }
 
 section.rankBox table.rankTable thead th{

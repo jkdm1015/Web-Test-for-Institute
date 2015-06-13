@@ -2,34 +2,34 @@
 $(function(){
 	
 	$(document).ready(function(){
-		//loadTotalRangeRankData("all");
-		
+		selectTab("all");
 	});
 	
-	
 }());
+
+
 /*
-
-
-function loadRankData(strCategory, outputTableSelector){
-	
-	
-	// AJAX 통신으로 결과값을 가져와서 화면에 뿌려주는 기능
-	// 지금은 테스트를 위해 더미값을 이용하여 기능 구현
-	var xmlData = loadData(strCategory);
-	
-	displayRankData(xmlData, outputTableSelector);
-}
-
-function loadData(strCategory){
-	var dataJSON = [
-	                	{rank:"", title:"", author:"", publisher:""}
-	                ];
-	
-	return dataJSON;
-}
-
-function displayRankData(xmlData, outputTableSelector){
-	$(outputTableSelector).children("tbody").asdasd
-}
+selectTab 파라미터들
+	all			: 전체
+	humanities	: 인문학
+	it			: 컴퓨터 
+	economy		: 경제
 */
+function selectTab(category){
+	toggleSelectedButton(category);
+	
+	var tableSelector = "table.rankTable";
+	getBookData(tableSelector, category);
+}
+
+function toggleSelectedButton(category){
+	$(".tabPanel ul li[class='selected']").removeClass("selected");
+	$(".tabPanel ul li[data-category='" + category + "']").addClass("selected");
+}
+
+function getBookData(tableSelector, category){
+	// AJAX 통신으로 결과값을 가져와서 화면에 뿌려주는 기능 (XML로 전달받음)
+	// 나중에 코드로 구현..
+	
+}
+

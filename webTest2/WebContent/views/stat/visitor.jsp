@@ -42,8 +42,15 @@
 		
 		<div class="statRule">
 			<ul>
-				<li>선택하신 날짜로부터 7일 전까지의 저희 사이트에 방문한 사람 수를 표시합니다.</li>
-				<li>만약, 날짜가 지정되지 않으면 현재 날짜로부터 7일 전까지의 방문자 수를 표시합니다.</li>
+				<li>
+					<img src="../../images/stat/li_bullet.png" alt="li_bullet.png" width="15" />
+					선택하신 날짜로부터 7일 전까지의 저희 사이트에 방문한 사람 수를 표시합니다.
+				</li>
+				
+				<li>
+					<img src="../../images/stat/li_bullet.png" alt="li_bullet.png" width="15" />
+					만약, 날짜가 지정되지 않으면 현재 날짜로부터 7일 전까지의 방문자 수를 표시합니다.
+				</li>
 			</ul>
 		</div>
 		

@@ -93,7 +93,7 @@
 		</div>
 		
 		<div class="rankBox">
-			<div class="rankTable">
+			<div class="rankTableWrapper"> <!-- 이 wrapper는 display:none 용으로 쓰임 -->
 				
 					<table style="width:100%;">
 						<colgroup>
@@ -162,9 +162,9 @@
 						</tbody>
 					</table>
 				
-				</div><!-- rankTable -->
+				</div><!-- rankTableWrapper -->
 		
-			<div class="rankTable">
+			<div class="rankTableWrapper">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -233,10 +233,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTable -->
+			</div><!-- rankTableWrapper -->
 			
 			
-			<div class="rankTable">
+			<div class="rankTableWrapper">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -305,10 +305,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTable -->
+			</div><!-- rankTableWrapper -->
 			
 			
-			<div class="rankTable">
+			<div class="rankTableWrapper">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -377,10 +377,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTable -->
+			</div><!-- rankTableWrapper -->
 			
 			
-			<div class="rankTable">
+			<div class="rankTableWrapper">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -449,10 +449,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTable -->
+			</div><!-- rankTableWrapper -->
 			
 			
-			<div class="rankTable">
+			<div class="rankTableWrapper">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -521,10 +521,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTable -->
+			</div><!-- rankTableWrapper -->
 			
 			
-			<div class="rankTable">
+			<div class="rankTableWrapper">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -593,13 +593,16 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTable -->
+			</div><!-- rankTableWrapper -->
 		</div><!-- rankBox -->
 		
 		
 		<div class="statRule">
 			<ul>
-				<li>특정 기간의 회원들의 나이대 별 누적 대여 횟수가 높은 상위 10권의 책들에 대한 통계입니다.</li>
+				<li>
+					<img src="../../images/stat/li_bullet.png" alt="li_bullet.png" width="15" />
+					특정 기간의 회원들의 나이대 별 누적 대여 횟수가 높은 상위 10권의 책들에 대한 통계입니다.
+				</li>
 			</ul>
 		</div>
 		

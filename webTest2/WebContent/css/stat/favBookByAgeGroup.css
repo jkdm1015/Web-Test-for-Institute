@@ -52,29 +52,29 @@ div.rankBox{
 	min-height:70px;
 }
 
-div.rankTable{
+div.rankTableWrapper{
 	display:none;
 }
 
 
-div.rankTable{
+div.rankTableWrapper{
 	margin:0 auto;
 	width:98%;
 	min-height:150px;
 	padding:1px;
 }
 
-div.rankTable th{
+div.rankTableWrapper th{
 	border:1px solid gray;
 	border-collapse:collapse;
 	
 }
 
-div.rankTable tr.odd{
+div.rankTableWrapper tr.odd{
 	background-color:#D8D8D8;
 }
 
-div.rankTable tr.even{
+div.rankTableWrapper tr.even{
 	background-color:#C6C6C6;
 }
 
