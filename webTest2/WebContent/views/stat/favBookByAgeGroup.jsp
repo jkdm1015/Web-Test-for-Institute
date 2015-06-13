@@ -93,7 +93,7 @@
 		</div>
 		
 		<div class="rankBox">
-			<div class="rankTableWrapper"> <!-- 이 wrapper는 display:none 용으로 쓰임 -->
+			<div class="rankTable">
 				
 					<table style="width:100%;">
 						<colgroup>
@@ -162,9 +162,9 @@
 						</tbody>
 					</table>
 				
-				</div><!-- rankTableWrapper -->
+				</div><!-- rankTable -->
 		
-			<div class="rankTableWrapper">
+			<div class="rankTable">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -233,10 +233,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTableWrapper -->
+			</div><!-- rankTable -->
 			
 			
-			<div class="rankTableWrapper">
+			<div class="rankTable">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -305,10 +305,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTableWrapper -->
+			</div><!-- rankTable -->
 			
 			
-			<div class="rankTableWrapper">
+			<div class="rankTable">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -377,10 +377,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTableWrapper -->
+			</div><!-- rankTable -->
 			
 			
-			<div class="rankTableWrapper">
+			<div class="rankTable">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -449,10 +449,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTableWrapper -->
+			</div><!-- rankTable -->
 			
 			
-			<div class="rankTableWrapper">
+			<div class="rankTable">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -521,10 +521,10 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTableWrapper -->
+			</div><!-- rankTable -->
 			
 			
-			<div class="rankTableWrapper">
+			<div class="rankTable">
 			
 				<table style="width:100%;">
 					<colgroup>
@@ -593,7 +593,7 @@
 					</tbody>
 				</table>
 			
-			</div><!-- rankTableWrapper -->
+			</div><!-- rankTable -->
 		</div><!-- rankBox -->
 		
 		
