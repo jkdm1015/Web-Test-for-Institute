@@ -8,6 +8,6 @@
 </head>
 <body>
 
-	<jsp:forward page="views/stat/favBook.jsp" />	
+	<jsp:forward page="views/stat/favBookByAgeGroup.jsp" />	
 </body>
 </html>

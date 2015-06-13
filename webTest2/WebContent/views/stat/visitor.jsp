@@ -20,6 +20,7 @@
 	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	
 	<script src="<%=request.getContextPath()%>/js/stat/stat-common.js"></script>
+	<script src="<%=request.getContextPath()%>/js/stat/visitor.js"></script>
 	
 </head>
 <body>
@@ -30,6 +31,84 @@
 	
 	<article id="rightContent">
 		<jsp:include page="/views/stat/parts/dateControl.jsp" />
+		
+		<div class="chartBox">
+		asdasd
+		</div>
+		
+		<div class="rankBox">
+			<div class="rankTable">
+			
+				<table style="width:100%;">
+					<colgroup>
+						<col width="20px" />
+						<col width="170px" />
+						<col width="60px" />
+					</colgroup>					
+					<thead>
+						<tr>
+							<th>순위</th>
+							<th>책 제목</th>
+							<th>누적 대여 횟수</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="odd">
+							<td>1</td>
+							<td><a href="#">아트인문학 여행 (김태진 저 / 카시오페아)</a></td>
+							<td>15</td>
+						</tr>
+						<tr class="even">
+							<td>2</td>
+							<td><a href="#">고독육강 (쟝쉰 저 / 이야기가있는집)</a></td>
+							<td>14</td>
+						</tr>
+						<tr class="odd">
+							<td>3</td>
+							<td><a href="#">옛 공부벌레들의 좌우명 (박수밀 저 / 샘터)</a></td>
+							<td>14</td>
+						</tr>
+						<tr class="even">
+							<td>4</td>
+							<td><a href="#">집 나간 책 (서민 저 / 인물과상사)</a></td>
+							<td>13</td>
+						</tr>
+						<tr class="odd">
+							<td>5</td>
+							<td><a href="#">글쓰기의 최전선 (은유 저 / 메멘토)</a></td>
+							<td>12</td>
+						</tr>
+						<tr class="even">
+							<td>6</td>
+							<td><a href="#">심플 (임정섭 저 / 다산초당)</a></td>
+							<td>11</td>
+						</tr>
+						<tr class="odd">
+							<td>7</td>
+							<td><a href="#">담론 (신영복 저 / 돌베개)</a></td>
+							<td>10</td>
+						</tr>
+						<tr class="even">
+							<td>8</td>
+							<td><a href="#">직관펌프, 생각을 열다 (대니얼 데닛 저 / 동아시아)</a></td>
+							<td>10</td>
+						</tr>
+						<tr class="odd">
+							<td>9</td>
+							<td><a href="#">씨네샹떼 (강신주, 이상용 저 / 민음사)</a></td>
+							<td>9</td>
+						</tr>
+						<tr class="even">
+							<td>10</td>
+							<td><a href="#">유시민의 글쓰기 특강 (정당인 저 / 생각의길)</a></td>
+							<td>9</td>
+						</tr>
+					</tbody>
+				</table>
+			
+			</div>
+		</div><!-- rankBox -->
+		
 		
 	</article>
 </article>
