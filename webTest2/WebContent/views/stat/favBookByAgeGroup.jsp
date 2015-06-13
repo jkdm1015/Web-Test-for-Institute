@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.Date, java.util.Calendar" %>
+<%@ page import="java.text.SimpleDateFormat" %>    
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,7 +12,6 @@
 	<style>
 		@IMPORT url("<%=request.getContextPath()%>/css/stat/favBookByAgeGroup.css");
 	</style>
-	
 
 	<!-- JQuery -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -28,11 +30,28 @@
 	
 	
 <article id="statContent">
+	
 	<jsp:include page="/views/stat/parts/leftSnb.jsp" />
 	
 	<article id="rightContent">
-		<jsp:include page="/views/stat/parts/dateControl.jsp" />
+				
 		
+		<%
+			Calendar calendar = Calendar.getInstance();
+			calendar.setTime(new Date());
+			calendar.set(Calendar.DATE, calendar.get(Calendar.DATE) - 7);
+			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy년MM월dd일");
+			// System.out.println("-7일 : " + dateFormat.format(calendar.getTime()));
+			// System.out.println("오늘 : " + dateFormat.format(new Date()));
+		%>    
+		    
+		<div id="dateControlPanel">
+			<span>시작날짜 <input type="text" name="startDate" id="datepicker" /> ~ 끝 날짜 <input type="text" name="endDate" id="datepicker2" /></span>
+			<button id="">검색</button>
+		</div>
+	
+	
+	
 		<div class="ageGroup">
 			<ul>
 				<li onclick="selectAgeGroupTab(0);">전체</li>
@@ -578,9 +597,6 @@
 		</div><!-- rankBox -->
 		
 		
-		
-		
-		
 		<div class="statRule">
 			<ul>
 				<li>특정 기간의 회원들의 나이대 별 누적 대여 횟수가 높은 상위 10권의 책들에 대한 통계입니다.</li>
@@ -594,6 +610,8 @@
 <script>
 
 
+
+/* 통계 출력 */
 $(function(){
 	
 	var chartDataForTotal = [
@@ -608,13 +626,14 @@ $(function(){
 	 	                  ['씨네샹떼', 7.6],
 	 	                  ['유시민의 글쓰기 특강', 7.6],
 	 	                 ];
-	 	
-	 	var chartObj = drawChartInternal(
-	 			".highChartContainer:eq(0)", 
-	 			'인기 있는 책 목록_전체',
-	 			chartDataForTotal
-	 	);
-	
+ 	
+ 	var chartObj = drawPie(
+ 			".highChartContainer:eq(0)", 
+ 			'인기 있는 책 목록_전체',
+ 			chartDataForTotal
+ 	);
+
+ 	chartObj.setSize(750, 500);
 	
 	var chartDataFor10s = [
 	                  ['아트인문학 여행', 12.8],
@@ -629,7 +648,7 @@ $(function(){
 	                  ['유시민의 글쓰기 특강', 7.6],
 	                 ];
 	
-	var chartObj = drawChartInternal(
+	var chartObj = drawPie(
 			".highChartContainer:eq(1)", 
 			'인기 있는 책 목록_10',
 			chartDataFor10s
@@ -651,7 +670,7 @@ $(function(){
 	 	                  ['유시민의 글쓰기 특강', 7.6],
 	 	                 ];
 	 	
- 	var chartObj = drawChartInternal(
+ 	var chartObj = drawPie(
  			".highChartContainer:eq(2)", 
  			'인기 있는 책 목록_20',
  			chartDataFor20s
@@ -673,7 +692,7 @@ $(function(){
  		                  ['유시민의 글쓰기 특강', 7.6],
  		                 ];
 	
-	var chartObj = drawChartInternal(
+	var chartObj = drawPie(
 			".highChartContainer:eq(3)", 
 			'인기 있는 책 목록_30',
 			chartDataFor30s
@@ -697,7 +716,7 @@ $(function(){
 	 	                  ['유시민의 글쓰기 특강', 7.6],
 	 	                 ];
 	 	
- 	var chartObj = drawChartInternal(
+ 	var chartObj = drawPie(
  			".highChartContainer:eq(4)", 
  			'인기 있는 책 목록_40',
  			chartDataFor40s
@@ -719,7 +738,7 @@ $(function(){
  	 	                  ['유시민의 글쓰기 특강', 7.6],
  	 	                 ];
  	 	
-  	var chartObj = drawChartInternal(
+  	var chartObj = drawPie(
   			".highChartContainer:eq(5)", 
   			'인기 있는 책 목록_50',
   			chartDataFor50s
@@ -741,7 +760,7 @@ $(function(){
  	 	                  ['유시민의 글쓰기 특강', 7.6],
  	 	                 ];
  	 	
-  	var chartObj = drawChartInternal(
+  	var chartObj = drawPie(
   			".highChartContainer:eq(6)", 
   			'인기 있는 책 목록_60',
   			chartDataFor60s

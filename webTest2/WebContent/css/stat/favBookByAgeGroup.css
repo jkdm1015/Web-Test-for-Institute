@@ -45,11 +45,38 @@ div.ageGroup ul li:not(.selected):hover{
 	background-color:#E8DAB3;
 }
 
+div.rankBox{
+	margin:10px auto;
+	display:inline-block;
+	width:99%;
+	min-height:70px;
+}
+
 div.rankTable{
 	display:none;
 }
 
 
-article, aside, div{
-	/* border:1px solid orange; */
+div.rankTable{
+	margin:0 auto;
+	width:98%;
+	min-height:150px;
+	padding:1px;
 }
+
+div.rankTable th{
+	border:1px solid gray;
+	border-collapse:collapse;
+	
+}
+
+div.rankTable tr.odd{
+	background-color:#D8D8D8;
+}
+
+div.rankTable tr.even{
+	background-color:#C6C6C6;
+}
+
+
+

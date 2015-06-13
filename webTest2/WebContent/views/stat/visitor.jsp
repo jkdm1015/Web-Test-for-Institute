@@ -28,90 +28,55 @@
 	
 <article id="statContent">
 	<jsp:include page="/views/stat/parts/leftSnb.jsp" />
-	
+
 	<article id="rightContent">
-		<jsp:include page="/views/stat/parts/dateControl.jsp" />
 		
-		<div class="chartBox">
-		asdasd
+		<div id="dateControlPanel">
+			<span>날짜 <input type="text" name="startDate" id="datepicker" /></span>
+			<button id="">검색</button>
 		</div>
 		
-		<div class="rankBox">
-			<div class="rankTable">
-			
-				<table style="width:100%;">
-					<colgroup>
-						<col width="20px" />
-						<col width="170px" />
-						<col width="60px" />
-					</colgroup>					
-					<thead>
-						<tr>
-							<th>순위</th>
-							<th>책 제목</th>
-							<th>누적 대여 횟수</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="odd">
-							<td>1</td>
-							<td><a href="#">아트인문학 여행 (김태진 저 / 카시오페아)</a></td>
-							<td>15</td>
-						</tr>
-						<tr class="even">
-							<td>2</td>
-							<td><a href="#">고독육강 (쟝쉰 저 / 이야기가있는집)</a></td>
-							<td>14</td>
-						</tr>
-						<tr class="odd">
-							<td>3</td>
-							<td><a href="#">옛 공부벌레들의 좌우명 (박수밀 저 / 샘터)</a></td>
-							<td>14</td>
-						</tr>
-						<tr class="even">
-							<td>4</td>
-							<td><a href="#">집 나간 책 (서민 저 / 인물과상사)</a></td>
-							<td>13</td>
-						</tr>
-						<tr class="odd">
-							<td>5</td>
-							<td><a href="#">글쓰기의 최전선 (은유 저 / 메멘토)</a></td>
-							<td>12</td>
-						</tr>
-						<tr class="even">
-							<td>6</td>
-							<td><a href="#">심플 (임정섭 저 / 다산초당)</a></td>
-							<td>11</td>
-						</tr>
-						<tr class="odd">
-							<td>7</td>
-							<td><a href="#">담론 (신영복 저 / 돌베개)</a></td>
-							<td>10</td>
-						</tr>
-						<tr class="even">
-							<td>8</td>
-							<td><a href="#">직관펌프, 생각을 열다 (대니얼 데닛 저 / 동아시아)</a></td>
-							<td>10</td>
-						</tr>
-						<tr class="odd">
-							<td>9</td>
-							<td><a href="#">씨네샹떼 (강신주, 이상용 저 / 민음사)</a></td>
-							<td>9</td>
-						</tr>
-						<tr class="even">
-							<td>10</td>
-							<td><a href="#">유시민의 글쓰기 특강 (정당인 저 / 생각의길)</a></td>
-							<td>9</td>
-						</tr>
-					</tbody>
-				</table>
-			
-			</div>
-		</div><!-- rankBox -->
+		<div class="chartBox">
+			<div class="highChartContainer"></div>
+		</div>
+		
+		<div class="statRule">
+			<ul>
+				<li>선택하신 날짜로부터 7일 전까지의 저희 사이트에 방문한 사람 수를 표시합니다.</li>
+				<li>만약, 날짜가 지정되지 않으면 현재 날짜로부터 7일 전까지의 방문자 수를 표시합니다.</li>
+			</ul>
+		</div>
 		
 		
 	</article>
 </article>
+
+
+<script>
+
+$(function(){
+	var xCategories = ['13일', '14일', '15일', '16일', '17일', '18일', '19일']; 
+	var chartData = [
+	                 	{
+	                	 	name:'사람 수', 
+	                	 	data:[87, 96, 110, 88, 90, 82, 81]
+	                	 }
+	                 
+	                 ];
+	
+	drawChart(".highChartContainer", "?년?월?일 ~ ?년?월?일", xCategories, chartData);
+	
+
+	/*['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+	'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']*/
+}());
+
+
+
+
+
+</script>
+
 	
 	
 </body>

@@ -8,14 +8,14 @@ article#statContent{
 	overflow:visible;
 	padding:0;
 	text-align:center;
-	height:100%;
-	
+	max-height:2000px;	
 }
 
 aside#leftSnb{
 	display:inline-block;
-	width:25%;
-	min-height:600px;
+	width:20%;
+	overflow:hidden;
+	min-height:690px;
 	padding:100px 5px 0 10px;
 	vertical-align:top;
 	text-align:left;
@@ -39,14 +39,13 @@ aside#leftSnb li a{
 }
 
 aside#leftSnb li a:hover{
-	font-size:20pt;
 	text-decoration:none;
 }
 
 
 article#rightContent{
 	display:inline-block;
-	width:65%;
+	width:70%;
 	vertical-align:top;
 	padding:30px 10px;
 }
@@ -64,12 +63,7 @@ div.chartBox{
 	min-height:200px;
 }
 
-div.rankBox{
-	margin:10px auto;
-	display:inline-block;
-	width:99%;
-	min-height:70px;
-}
+
 
 div.statRule{
 	margin-top:30px;
@@ -86,26 +80,6 @@ div.statRule{
 div.statRule ul li{
 	list-style-type:square;
 	list-style-position: inside;
-}
-
-div.rankTable{
-	margin:0 auto;
-	width:98%;
-	min-height:150px;
-	padding:1px;
-}
-
-div.rankTable th{
-	border:1px solid gray;
-	border-collapse:collapse;
-	
-}
-
-div.rankTable tr.odd{
-	background-color:#D8D8D8;
-}
-
-div.rankTable tr.even{
-	background-color:#C6C6C6;
+	margin-bottom:10px;
 }
 
