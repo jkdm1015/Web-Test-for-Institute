@@ -64,11 +64,27 @@ div.rankTable{
 	padding:1px;
 }
 
-div.rankTable th{
+
+div.rankTable table thead tr th{
 	border:1px solid gray;
 	border-collapse:collapse;
-	
+	font-size:16pt;
 }
+
+
+div.rankTable table tbody tr{
+}
+
+div.rankTable table tbody tr td{
+	padding:6px 0;
+	font-size:16pt;
+	vertical-align:middle;
+}
+
+div.rankTable table tbody tr td a{
+	font-size:16pt;	
+}
+
 
 div.rankTable tr.odd{
 	background-color:#D8D8D8;

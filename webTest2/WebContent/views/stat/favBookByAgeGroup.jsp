@@ -97,13 +97,13 @@
 				
 					<table style="width:100%;">
 						<colgroup>
-							<col width="20px" />
+							<col width="50px" />
 							<col width="170px" />
 							<col width="60px" />
 						</colgroup>					
 						<thead>
 							<tr>
-								<th>전체순위</th>
+								<th>순위</th>
 								<th>책 제목</th>
 								<th>누적 대여 횟수</th>
 							</tr>
@@ -174,7 +174,7 @@
 					</colgroup>					
 					<thead>
 						<tr>
-							<th>1순위</th>
+							<th>순위</th>
 							<th>책 제목</th>
 							<th>누적 대여 횟수</th>
 						</tr>
@@ -246,7 +246,7 @@
 					</colgroup>					
 					<thead>
 						<tr>
-							<th>2순위</th>
+							<th>순위</th>
 							<th>책 제목</th>
 							<th>누적 대여 횟수</th>
 						</tr>
@@ -318,7 +318,7 @@
 					</colgroup>					
 					<thead>
 						<tr>
-							<th>3순위</th>
+							<th>순위</th>
 							<th>책 제목</th>
 							<th>누적 대여 횟수</th>
 						</tr>
@@ -390,7 +390,7 @@
 					</colgroup>					
 					<thead>
 						<tr>
-							<th>4순위</th>
+							<th>순위</th>
 							<th>책 제목</th>
 							<th>누적 대여 횟수</th>
 						</tr>
@@ -462,7 +462,7 @@
 					</colgroup>					
 					<thead>
 						<tr>
-							<th>5순위</th>
+							<th>순위</th>
 							<th>책 제목</th>
 							<th>누적 대여 횟수</th>
 						</tr>
@@ -534,7 +534,7 @@
 					</colgroup>					
 					<thead>
 						<tr>
-							<th>6순위</th>
+							<th>순위</th>
 							<th>책 제목</th>
 							<th>누적 대여 횟수</th>
 						</tr>
@@ -632,7 +632,7 @@ $(function(){
  	
  	var chartObj = drawPie(
  			".highChartContainer:eq(0)", 
- 			'인기 있는 책 목록_전체',
+ 			'인기 있는 책 목록',
  			chartDataForTotal
  	);
 
@@ -653,7 +653,7 @@ $(function(){
 	
 	var chartObj = drawPie(
 			".highChartContainer:eq(1)", 
-			'인기 있는 책 목록_10',
+			'인기 있는 책 목록',
 			chartDataFor10s
 	);
 	
@@ -675,7 +675,7 @@ $(function(){
 	 	
  	var chartObj = drawPie(
  			".highChartContainer:eq(2)", 
- 			'인기 있는 책 목록_20',
+ 			'인기 있는 책 목록',
  			chartDataFor20s
  	);
  	
@@ -697,7 +697,7 @@ $(function(){
 	
 	var chartObj = drawPie(
 			".highChartContainer:eq(3)", 
-			'인기 있는 책 목록_30',
+			'인기 있는 책 목록',
 			chartDataFor30s
 	);
 	
@@ -721,7 +721,7 @@ $(function(){
 	 	
  	var chartObj = drawPie(
  			".highChartContainer:eq(4)", 
- 			'인기 있는 책 목록_40',
+ 			'인기 있는 책 목록',
  			chartDataFor40s
  	);
  	
@@ -743,7 +743,7 @@ $(function(){
  	 	
   	var chartObj = drawPie(
   			".highChartContainer:eq(5)", 
-  			'인기 있는 책 목록_50',
+  			'인기 있는 책 목록',
   			chartDataFor50s
   	);
   	
@@ -765,7 +765,7 @@ $(function(){
  	 	
   	var chartObj = drawPie(
   			".highChartContainer:eq(6)", 
-  			'인기 있는 책 목록_60',
+  			'인기 있는 책 목록',
   			chartDataFor60s
   	);
   	
