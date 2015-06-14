@@ -1,4 +1,4 @@
-package webTest2;
+package test;
 
 public class AnyTest {
 
